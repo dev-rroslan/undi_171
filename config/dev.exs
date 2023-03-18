@@ -26,7 +26,8 @@ config :undi, UndiWeb.Endpoint,
   secret_key_base: "Gy3xNoXRI88VUQ53jb/SHMD1knd7eB+zIZ3jKFJoUiv4saUoYrdmXku9zURH+BDQ",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
+    tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]},
+    storybook_tailwind: {Tailwind, :install_and_run, [:storybook, ~w(--watch)]}
   ]
 
 # ## SSL Support
@@ -58,7 +59,8 @@ config :undi, UndiWeb.Endpoint,
     patterns: [
       ~r"priv/static/(?!uploads).*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/undi_web/(controllers|live|components)/.*(ex|heex)$"
+      ~r"lib/undi_web/(controllers|live|components)/.*(ex|heex)$",
+      ~r"storybook/.*(exs)$"
     ]
   ]
 

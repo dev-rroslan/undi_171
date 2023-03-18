@@ -38,7 +38,7 @@ defmodule Undi.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.18.16"},
+      {:phoenix_live_view, "~> 0.18.17"},
       {:heroicons, "~> 0.5"},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.7.2"},
@@ -54,7 +54,8 @@ defmodule Undi.MixProject do
       {:bcrypt_elixir, "~> 3.0"},
       {:faker, "~> 0.17.0"},
       {:number, "~> 1.0"},
-      {:timex, "~> 3.7"}
+      {:timex, "~> 3.7"},
+      {:phoenix_storybook, "~> 0.5.2"}
     ]
   end
 

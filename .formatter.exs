@@ -5,7 +5,8 @@
   inputs: [
     "*.{heex,ex,exs}",
     "{config,lib,test}/**/*.{heex,ex,exs}",
-    "priv/*/seeds.exs"
+    "priv/*/seeds.exs",
+    "storybook/**/*.exs"
   ],
   heex_line_length: 72
 ]
